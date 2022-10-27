@@ -7,9 +7,15 @@ Terrarian.Health = 100;
 Terrarian.EyeColor = "";
 Terrarian.JumpHeight = 2;
 
-Console.WriteLine("");
 
-//DU MÅSTE SKRIVA ELLER GÖRA SÅ ATT ANVÄNDAREN KAN SPARA DERAS EGNA VÄRDEN!!
+Console.WriteLine("Write health amount:");
+Console.WriteLine("Write your characters eyecolor:");
+Console.WriteLine("Write jump height:");
+string health = Console.ReadLine();
+string eyecolor = Console.ReadLine();
+string jumpheight = Console.ReadLine();
+
+
 
 string test = JsonSerializer.Serialize<Character>(Terrarian);
 
